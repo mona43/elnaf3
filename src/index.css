@@ -1,0 +1,412 @@
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: #fff;
+}
+.navbar-nav .nav-link{
+  color: #fff !important;
+
+}
+.navbar-toggler-icon{
+  background-color: #ffff;
+}
+.link {
+    text-decoration: none;
+    color: #fff ;
+}
+
+.link:hover{
+  
+    color: #0047ab;
+}
+
+
+body{
+    font-family: "Amiri ","Cairo", serif !important;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+  
+  /* Start Home-Slide */
+  .header {
+    position: relative;
+    text-align: center;
+    background-image: url(/public/bg.jpeg);
+    background-position: center;
+    color: #333;
+    background-blend-mode: color-burn;
+    background-size: cover;
+  }
+  
+  .inner-header {
+    height: 65vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .flex {
+    /* Flexbox for containers */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .waves {
+    position: relative;
+    width: 100%;
+    height: 25vh;
+    margin-bottom: -7px; /* Fix for safari gap */
+    min-height: 120px;
+    max-height: 120px;
+  }
+  
+  .content {
+    position: relative;
+    height: 20vh;
+    text-align: center;
+    background-color: white;
+  }
+  
+  /* Animation */
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+  }
+  
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  
+  @keyframes move-forever {
+    0% {
+      transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+      transform: translate3d(85px, 0, 0);
+    }
+  }
+  
+  /* Shrinking for mobile */
+  @media (max-width: 768px) {
+    .waves {
+      height: 120px;
+      min-height: 120px;
+    }
+    .content {
+      height: 30vh;
+    }
+    h1 {
+      font-size: 24px;
+    }
+
+  }
+  
+
+  /* End Home-Slide */
+
+
+
+  /* رؤيه - رساله - اهداف  */
+ .card1{
+  transition: .5s;
+  border-radius: 15px 0 15px 0;
+
+ } 
+ 
+ .card1:hover{
+  cursor: pointer;
+  scale: 1.05;
+ }
+
+ @media(max-width:800px){
+  .navbar-main{
+    display: none !important;
+  }
+ }
+
+
+ .custom-caption {
+  position: absolute;
+  top: 30% !important;
+  left: 15% !important; /* المسافة من اليسار */
+  text-align: left; /* محاذاة النص لليسار */
+  padding: 10px; /* حواف داخلية */
+  border-radius: 5px; /* زوايا مستديرة */
+  color: #fff; /* لون النص */
+}
+
+
+.custom-caption {
+  position: relative;
+  z-index: 1;
+}
+
+.bgHeader {
+  position: absolute;
+  top: 0;
+  bottom: 0 !important;
+  left: 0;
+  width: 100vw;  /* لتغطية عرض الشاشة بالكامل */
+  height: 150vh !important; /* لتغطية ارتفاع الشاشة بالكامل */
+  background-color: rgba(10, 13, 197, 0.5); /* خلفية شفافة مع درجة معينة من اللون الأسود */
+  z-index: 1; /* لوضع العنصر خلف النصوص */
+}
+
+
+
+.custom-caption h3,
+.custom-caption p {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+
+
+
+
+.btn2{
+  background-color: transparent;
+  padding: 10px 10px;
+  border-radius: 25px ;
+  color: #000;
+  border: 1px solid #000;
+  width: 200px;
+}
+.btn1{
+background-color: transparent;
+padding: 10px 10px;
+border-radius: 25px ;
+color: #fff;
+border: 2px solid #fff;
+width: 200px;
+}
+.btn1:hover ,.btn2:hover{
+  background-color: #0047ab;
+}
+
+.img {
+  height: 100%; 
+  object-fit: cover;
+}
+
+@media (max-width: 768px) { 
+  .img {
+    height: 500px;
+  }
+}
+
+.carousel-indicators [data-bs-target]{
+  display: none ;
+}
+
+
+
+
+
+
+
+
+/* الأساسيات */
+.contact_section {
+  /* padding: 50px 15px; */
+  background-color: #f9f9f9;
+}
+
+.contact_title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.mail_section_1 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mail_text,
+.message_text {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.mail_text:focus,
+.message_text:focus {
+  border-color: #007bff;
+}
+
+.send_button {
+  text-align: center;
+}
+
+.send_button button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.send_button button:hover {
+  background-color: #0056b3;
+}
+
+.contact_img img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* استجابة الشاشات */
+@media (max-width: 768px) {
+  .contact_section_2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form_container,
+  .image_container {
+    width: 100%;
+  }
+
+  .contact_img img {
+    height: auto;
+  }
+
+  .contact_title {
+    font-size: 2rem;
+  }
+
+  .mail_text,
+  .message_text {
+    font-size: 0.9rem;
+  }
+
+  .send_button button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact_title {
+    font-size: 1.8rem;
+  }
+
+  .mail_text,
+  .message_text {
+    font-size: 0.8rem;
+  }
+
+  .send_button button {
+    font-size: 0.8rem;
+    padding: 8px 15px;
+  }
+  .company{
+    min-height: 60vh !important;
+  }
+}
+
+
+
+.footer_section {
+  /* background-color: #f8f9fa; */
+  color: #fff;
+  padding: 50px 0;
+}
+
+.useful_text {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.lorem_text {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.location_text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.location_text ul li {
+  text-align: center;
+}
+
+.location_text ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+ li a {
+  text-decoration: none;
+  color: #fff;
+
+}
+
+ ul li a:hover {
+  color: #0047ab;
+}
+.social_icon ul {
+  padding: 0;
+  display: flex;
+}
+
+.social_icon ul li a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social_icon ul li a:hover {
+  color: #0047ab;
+}
+
+/* .subscribe_bt a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+  text-decoration: none;
+} */
+
+/* .subscribe_bt a:hover {
+  background-color: #e47c04;
+} */
+

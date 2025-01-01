@@ -1,0 +1,7 @@
+export {default as Home  } from './1-Home/Home'
+export {default as Contact  } from  './2-Contact/Contact'
+export {default as Company1 } from './3-company1/Company1'
+export {default as Company2 } from './4-company2/Company2'
+export {default as Company3 } from './5-company3/Company3'
+export {default as Company4 } from './6-company4/Company4'
+export {default as Data } from './7-data/data'

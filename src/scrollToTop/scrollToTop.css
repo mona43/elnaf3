@@ -1,0 +1,24 @@
+button {
+    font-size: 20px;
+    font-weight: bold;
+    animation: fadeIn 0.3s ease-in-out;
+    z-index: 2000;
+    transition: .5s !important;
+    -webkit-transition: .5s !important;
+    -moz-transition: .5s !important;
+    -ms-transition: .5s !important;
+    -o-transition: .5s !important;
+}
+  button:hover {
+    scale: 1.2;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
