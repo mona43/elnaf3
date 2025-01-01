@@ -7,7 +7,7 @@ const CompanyComponentsCards = ({img ,title, description, url}) => {
     <h5 className="text-center"> {title}</h5>
     <p style={{textAlign:"center"}}> {description}</p>
     <button className='btn2 my-3'onClick={()=>{
-      document.location.href = `/${url}`
+      document.location.href = '/'+url
     }}> المزيد </button>
    </card>
   )
