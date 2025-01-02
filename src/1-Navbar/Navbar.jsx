@@ -1,17 +1,10 @@
-import { Link } from "react-router-dom";
 import React, { useState } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState("/"); 
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-  };
-
-  const handleLinkClick = (link) => {
-    setActiveLink(link); 
-    setIsOpen(false); 
   };
 
   return (
@@ -44,104 +37,59 @@ const Navbar = () => {
         >
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link
-                className={`nav-link ${
-                  activeLink === "/" ? "active" : ""
-                }`}
-                to="/"
-                onClick={() => handleLinkClick("/")}
-              >
+              <a className="nav-link" href="/">
                 الصفحه الرئيسيه
-              </Link>
+              </a>
             </li>
             <li className="nav-item d-none">
-              <Link className="nav-link" to="#">
-                {" "}
-              </Link>
+              <a className="nav-link" href="#"></a>
             </li>
             <li className="nav-item">
-              <Link
-                className={`nav-link ${
-                  activeLink === "/data" ? "active" : ""
-                }`}
-                to="/data"
-                onClick={() => handleLinkClick("/data")}
-              >
+              <a className="nav-link" href="/data">
                 بيانات الشركه
-              </Link>
+              </a>
             </li>
-
             <li className="nav-item dropdown">
-              <Link
+              <a
                 className="nav-link dropdown-toggle"
-                to="#"
+                href="#"
                 id="navbarDropdownMenuLink"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 الشركات التابعه
-              </Link>
+              </a>
               <ul
                 className="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <li className="text-end">
-                  <Link
-                    className={`dropdown-item ${
-                      activeLink === "/company1" ? "active" : ""
-                    }`}
-                    to="/company1"
-                    onClick={() => handleLinkClick("/company1")}
-                  >
+                  <a className="dropdown-item" href="/company1">
                     الخير للاستثمار
-                  </Link>
+                  </a>
                 </li>
                 <li className="text-end">
-                  <Link
-                    className={`dropdown-item ${
-                      activeLink === "/company2" ? "active" : ""
-                    }`}
-                    to="/company2"
-                    onClick={() => handleLinkClick("/company2")}
-                  >
+                  <a className="dropdown-item" href="/company2">
                     أمان للخدمات المالية
-                  </Link>
+                  </a>
                 </li>
                 <li className="text-end">
-                  <Link
-                    className={`dropdown-item ${
-                      activeLink === "/company3" ? "active" : ""
-                    }`}
-                    to="/company3"
-                    onClick={() => handleLinkClick("/company3")}
-                  >
+                  <a className="dropdown-item" href="/company3">
                     المعرفه للتكنولوجيا
-                  </Link>
+                  </a>
                 </li>
                 <li className="text-end">
-                  <Link
-                    className={`dropdown-item ${
-                      activeLink === "/company4" ? "active" : ""
-                    }`}
-                    to="/company4"
-                    onClick={() => handleLinkClick("/company4")}
-                  >
+                  <a className="dropdown-item" href="/company4">
                     ريادة للاستشارات والتطوير
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </li>
             <li className="nav-item">
-              <Link
-                className={`nav-link ${
-                  activeLink === "/contact" ? "active" : ""
-                }`}
-                to="/contact"
-                onClick={() => handleLinkClick("/contact")}
-              >
+              <a className="nav-link" href="/contact">
                 تواصل معنا
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
